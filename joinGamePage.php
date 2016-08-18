@@ -108,7 +108,7 @@ function printGamesListStepTwo($game_id)
         echo "Connection error " . $mysqli->connect_errno . " " . $mysqli->connect_error;
     }
     if (!($stmt = $mysqli->prepare("SELECT games.name, games.id FROM `games` WHERE games.id=$game_id"))) {
-        echo "<h3> Actually, there are no games waiting to be joined right now! Why don't you go ahead and <a href='createGame.php'>make one?</a></h3>";
+        echo "<h3> Actually, there are no games waiting to be joined right now! Why don't you go ahead and <a href='createGamePage.php'>make one?</a></h3>";
     }
     if (!$stmt->execute()) {
         echo "Execute failed: " . $stmt->errno . " " . $stmt->error;
