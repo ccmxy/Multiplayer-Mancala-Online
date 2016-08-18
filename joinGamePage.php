@@ -121,7 +121,7 @@ function printGamesListStepTwo($game_id)
 
         echo "<div class='row'>
          <div class='col-lg-12'>
-         <a href='joinGame.php?gameId=" . urlencode($game_id) . "&returnMsg=" . urlencode($msg) . "&name=" . urlencode($game_name) . "'class='list-group-item list-group-item-action'> " . $game_name . "<a>
+         <a href='joinGameAction.php?gameId=" . urlencode($game_id) . "&returnMsg=" . urlencode($msg) . "&name=" . urlencode($game_name) . "'class='list-group-item list-group-item-action'> " . $game_name . "<a>
          </div>
          </div>";
     }
