@@ -1,0 +1,326 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+#board-container{
+  display:block;
+width:800px;
+margin: 20px auto;
+
+}
+
+#text-container{
+  display:block;
+  left:50%;
+}
+
+#game-name{
+  font-family: 'Poiret One', cursive;
+}
+
+
+#board {
+    width: 640px;
+    height: 160px;
+    margin: 0.5em;
+    border: 2px solid #808080;
+}
+
+#board div {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.circle{
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    border:1px solid #ccc;
+    width:50px;
+    height:60px;
+    background-color: #D4C197;
+    color: #D4C197;
+}
+
+
+  .lilcircle{
+      -webkit-border-radius:8px;
+      -moz-border-radius:8px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      width:8px;
+      height:8px;
+      position: relative;
+  }
+
+  .seeds{
+    font-size: 1.5em;
+        line-height:10%;
+        color: black;
+    /*margin: 0 auto;*/
+    /*margin-top: 10px;*/
+  }
+
+  .seeds .under-20{
+    font-size: 1.8em;
+        line-height:1%;
+        color: black;
+    /*margin: 0 auto;*/
+    /*margin-top: 10px;*/
+  }
+
+.seeds .over-thirty{
+  font-size: 1.6em;
+}
+
+
+
+.seeds .under-36{
+  font-size: 1.3em;
+  display: inline-block;
+}
+/*Color the text in every other div white:*/
+#board div:nth-child(-2n+5) form input[type="submit"],
+#board div:nth-child(6) ~ div:nth-child(-2n+13) form input[type="submit"]
+ {
+    color: white;
+ }
+
+.color-four span:nth-child(1n+0)
+{
+  color: #3A99D8;
+}
+.color-four span:nth-child(2n+0){
+  color: #EA621F;
+}
+.color-four span:nth-child(3n+0){
+  color: #30AD63;
+}
+.color-four span:nth-child(4n+0)
+{
+  color: #F27EC2;
+}
+
+.color-ten span:nth-child(1n+1)
+{
+  color: #3A99D8;
+}
+.color-ten span:nth-child(2n+2)
+{
+  color: #EA621F;
+}
+.color-ten span:nth-child(3n+3){
+  color: #30AD63;
+}
+.color-ten span:nth-child(4n+4)
+{
+  color: #F27EC2;
+}
+.color-ten span:nth-child(5n+5)
+{
+  color: #E54D42;
+}
+.color-ten span:nth-child(6n+6){
+  color: #D25F9D;
+}
+.color-ten span:nth-child(7n+7){
+  color: #30AD63;
+}
+.color-ten span:nth-child(8n+8)
+{
+  color: #2F81B7;
+}
+.color-ten span:nth-child(9n+9){
+  color: #F18E22;
+}
+.color-ten span:nth-child(10n+10)
+{
+  color: #FDA729;
+}
+
+/*.color-four span:nth-child(5n+0)
+{
+  color: #FECC2F;
+}*/
+
+
+/* End zone 2*/
+#board div:nth-child(1){
+  background-color: #EFDDB6;
+  height: 160px;
+  color: white;
+}
+
+/*Circle within end zone 2*/
+#board div:nth-child(1) div{
+  background-color: #D4C197;
+  /*text-align: center;
+  vertical-align: middle;*/
+}
+
+table{
+  align-self: center;
+  vertical-align: center;
+  color: #D4C197;
+}
+
+/*End zone 1*/
+#board div:nth-child(2){
+  background-color: #EFDDB6;
+  float:right;
+  height:160px;
+  color: white;
+}
+
+/*Circle within end zone 1*/
+#board div:nth-child(2) div{
+  background-color: #D4C197;
+  text-align: center;
+  /*vertical-align: middle; //doesnt work*/
+}
+
+/*Top left pit:*/
+#board div:nth-child(8){
+  background-color: #E54D42;
+}
+
+/*Bottom left pit:*/
+#board div:nth-child(9){
+  background-color: #BE3A31;
+  /*height: 0px;*/
+}
+
+/*Second from the left top:*/
+#board div:nth-child(7){
+  background-color: #EA621F;
+}
+
+/*Second from left bottom:*/
+#board div:nth-child(10){
+  background-color: #F18E22;
+}
+
+
+/*Bottom left pit:*/
+/*#board div:nth-child(8){
+  background-color: #E54D42;
+}*/
+
+/*Third from left top:*/
+#board div:nth-child(6){
+  background-color: #FDA729;
+}
+
+/*Third from the left bottom:*/
+#board div:nth-child(11){
+  background-color: #FECC2F;
+}
+
+
+
+/*Third from right top:*/
+#board div:nth-child(5){
+  background-color: #3A99D8;
+}
+
+/*Third from right bottom:*/
+#board div:nth-child(12){
+  background-color: #2F81B7;
+}
+
+
+/*Second from right top:*/
+#board div:nth-child(4){
+  background-color: #30AD63;
+}
+
+/*Second from right bottom:*/
+#board div:nth-child(13){
+  background-color: #39CA74;
+}
+
+
+/*Top right*/
+#board div:nth-child(3){
+  background-color: #F27EC2;
+}
+
+/*Bottom right:*/
+#board div:nth-child(14){
+  background-color: #D25F9D;
+}
+
+div form input[type="submit"]{
+
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    float: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    text-align: center;
+
+}
+
+body
+{
+	padding: 50px;
+}
+
+/*.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}*/
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 8px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+  cursor: pointer;
+}
+
+.action-button:active
+{
+	/*transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);*/
+	border-bottom: 1px solid;
+}
