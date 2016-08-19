@@ -5,7 +5,7 @@ An online, multiplayer Mancala game made with pure PHP. Connected to a MySQL dat
 This site is live at http://web.engr.oregonstate.edu/~minorc/
 
 
-![Example Game](./Screenshots/makeMoves.png)
+View the codepen demo at https://codepen.io/RainbowBright/full/PzgGRL/
 
 
 Sign up and create and play as many games as you want! 
